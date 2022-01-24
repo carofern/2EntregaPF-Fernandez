@@ -25,7 +25,6 @@ header {
     width: 80px;
     cursor: pointer;
     margin-right: auto;
-    padding: 0 40px;
 }
 .nav-menu {
     list-style: none;
@@ -47,6 +46,24 @@ header {
 }
 .nav-menu-item a:hover {
     color: #d64127;
+}
+
+/* BOOTSTRAP EN NAV */
+
+.navbar-nav a {
+    text-decoration: none;
+    font-size: 21px;
+    margin: 0 10px;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #d64127;
+}
+.navbar-brand {
+    padding: 0;
+    margin-right: 0;
+}
+.navbar {
+    padding: 0;
 }
 
 /* Fin Header */ 
@@ -83,40 +100,11 @@ header {
 }
 
 /* Section con grid */
-.main-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 3rem;
-}
-@media (max-width: 768px) {
-    .main-container {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-} 
-.container {
-    padding: 1rem;
-}
-.container a {
-    text-decoration: solid;
-    color: var(--black);
-    font-size: 18px;
-    text-transform: uppercase;
-    margin-top: 1rem;
-    text-align: center;
-} 
-.container-photos {
-    width: 100%;
-    margin-bottom: auto;
-}
-.container-info {
+/*  */
 
-}
-/* .container-nombre {
-    color: var(--black);
-    font-size: 18px;
-    margin-top: 1rem;
-    text-align: center;
+
+/* .first-photo {
+    height: 214.66px;
 } */
 
 /* Transicion en Grid */
@@ -124,6 +112,24 @@ header {
     opacity: 0.7;
     transition: all 0.3s ease-in-out;
 }
+/* SYSTEM GRID BOOTSTRAP */
+.container-photos {
+    width: 356px;
+    height: 260px;
+}
+.container-info {
+    display: flex;
+    color: black;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+.col a {
+    text-decoration: none;
+}
+.container {
+    margin-top: 5rem;
+}
+
 
 /* Footer */
 
@@ -143,6 +149,10 @@ header {
 }
 .nav-footer li {
     text-align: center;
+    display: inline-flex;
+}
+.footer-cw {
+    margin-left: 1rem;
 }
 
 /* Media Queries - Full Responsive */
